@@ -12,7 +12,57 @@
     <style>
         body {
             font-family: Arial;
+            background: linear-gradient(62deg, #AA96DA, #320d86, #676077, #8c65e7);
+            animation: gradient 15s ease infinite;
+            background-size: 400% 400%;
+            min-height: 100vh;
         }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #terminal-container {
+            border: solid 28px #C5FAD5;
+            width: 704px;
+            display: flex;
+            margin: auto auto;
+            padding-right: 26px;
+            text-align: left;
+        }
+
+        #terminal {
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        #btn button {
+            width: 150px;
+            height: 50px;
+            background-color: #C5FAD5;
+            color: black;
+            border: 3px solid #FFFFD2;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+
 
         /**
         * Default styles for xterm.js
