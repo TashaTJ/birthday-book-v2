@@ -202,6 +202,29 @@ def convert_to_list_action(option, action):
         print(Fore.WHITE + Back.RED + 'Invalid action has been defined.')
 
 
+def select_from_multiple_records(birthdays):
+    """
+    Function to choose a single record from a list
+    of records that have been returned
+    """
+    def print_records_as_options(records, function=None):
+        """
+        Function to print a single birthday with an record number.
+        To be used in the birthday search functions when multiple
+        records are returned.
+        """
+        for idx, record in enumerate(records):
+            print(Fore.CYAN + f"\nRecord: {idx}\n")
+            print_records_in_loop(record)
+
+    print(Fore.BLACK + Back.WHITE + '\nList of birthdays to choose from: ')
+    print_records_as_options(birthdays, print_records_in_loop)
+    user_input = user_response(Fore.BLACK + Back.WHITE + 
+        '\nEnter the record number of the birthday you would like to action: ',
+        0, len(birthdays))
+    return birthdays[user_input]
+
+
 def run_programme():
     """
     This function calls on all other functions
