@@ -173,7 +173,8 @@ def save_to_worksheet(info):
     worksheet_to_update.append_row(info)
     print(Fore.BLACK + Back.WHITE + 'Save complete')
 
-    user_input = pyip.inputYesNo(Fore.BLACK + Back.WHITE + 
+    user_input = pyip.inputYesNo(
+        Fore.BLACK + Back.WHITE + 
         '\nWould you like to edit this birthday? (Y/N): '
         )
     if user_input == 'yes':
