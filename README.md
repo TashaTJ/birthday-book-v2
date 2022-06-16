@@ -1,31 +1,206 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Birthday Book - Project Portfolio 3 - Python**
 
-Welcome Tasha Johnson,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+![Birthday Book Image](docs/images/)
 
-## Reminders
+# Contents
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+* [Objective](<#objective>)
+* [User Experience](<#user-experience-ux>)
+  * [Site Aims](<#site-aims>)
+  * [User Stories](<#user-stories>)
+  * [Flow Chart](<#flowchart>)
+* [Features](<#features>)
+* [Future Features](<#future-features>)
+* [Technologies Used](<#technologies-used>)
+* [Data Model](<#data-model>)
+* [Testing](<#testing>)
+  * [PEP8 Valdation](<#pep8-validation>)
+  * [Manual Testing](<#manual-testing>)
+  * [Validation](<#validation>)
+  * [Bugs Fixed](<#bugs-fixed>)
+  * [Existing Bugs](<#existing>)
+  * [Terminal Compatibility](<#terminal-compatibility>)
+* [Deployment](<#deployment>)
+* [Credits](<#credits>)
+* [Acknowledgements](<#acknowledgements>)
 
-## Creating the Heroku app
+# Objective
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+[Back to top](<#contents>)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+# User Experience (UX)
 
-Connect your GitHub repository and deploy as normal.
+## Site Aims
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+[Back to top](<#contents>)
+
+## User Stories
+
+**user**  
+
+[Back to top](<#contents>)
+
+## Flowchart
+
+![Birthday Book Flowchart](docs/flowchart/)
+
+[Back to top](<#contents>)
+
+# Features
+
+
+
+![Main Menu](assets/images/)
+
+## Retrieve all Birthdays
+
+![Menu example of 4 options](docs/images/)
+
+ 
+## Search Birthdays
+
+![Search Birthdays](docs/images/)
+
+
+
+## Add New Birthday
+![Add New Birthday](docs/images/)
+
+
+## Edit Existing Birthday
+![Edit Existing Birthday](docs/images/)
+
+
+# Future Features
+
+## Days until data
+
+## Bot created to automate texts to Birthday Boys and Girls 
+
+## Automated email Birthday Cards to recipients
+
+## Automated birthday reminders 
+
+[Back to top](<#contents>)
+
+# Technologies Used
+
+* [HTML5]
+* [CSS3]
+* [Python]
+* [Google Chrome DevTools]
+* [Lucidchart]
+* [Google sheets]
+* [Gitpod]
+* [Heroku]
+
+## Python Libraries
+
+* [gspread]
+* [Google Auth]
+* [colorama]
+* [pyfiglet]
+* [PyInputPlus]
+
+[Back to top](<#contents>)
+
+# Data Model
+
+![Google sheets](docs/images/)
+
+[Back to top](<#contents>)
+
+# Testing
+
+## PEP8 Validation
+
+[PEP8](http://pep8online.com/) 
+
+### run.py
+
+![run.py PEP8 test result](docs/images/)
+
+## Manual Testing
+
+
+<details><summary> Manual Testing Info</summary>
+
+### Welcome screen
+
+### Search birthdays
+
+### Add New Birthday
+
+### Edit Existing Birthday
+
+### Retrieve all Birthdays
+  
+### Exit
+
+### Other
+
+
+</details>
+
+[Back to top](<#contents>)  
+
+## Validation  
+
+[Back to top](<#contents>)
+
+## Bugs Fixed
+
+<details><summary>Bugs Fixed info</summary>
+
+### Bug 1
+
+![bug 1](docs/images/)
+
+
+### Bug 2
+
+![bug 2](docs/images/)
+
+### Bug 3
+
+![bug 3](docs/images/)
+
+
+</details>
+
+[Back to top](<#contents>)
+
+## Exsiting Bugs 
+
+## Terminal Compatibility
+
+![Heroku Terminal](docs/images/heroku-terminal.png)
+
+![Local Terminal](docs/images/local-terminal.png)
+
+[Back to top](<#contents>)
+
+# Deployment
+
+## Deployment to Heroku
+
+## To fork the repository on GitHub
+
+## To clone the repository on GitHub
+
+</details>
+
+[Back to top](<#contents>)
+
+# Credits
+
+[Back to top](<#contents>)
+
+# Acknowledgements
+
+[Back to top](<#contents>)
