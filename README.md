@@ -360,6 +360,9 @@ Forking the GitHub account creates a copy of the Repository. Changes can be made
 
 # Acknowledgements
 
+Thanks to my [mentor](https://www.linkedin.com/in/precious-ijege-908a00168/), Code institute, slack community and members of my cohort, without whom I would not have been able to execute this project. 
+Birthday Book was developed as part of my Diploma in Software Development (E-commerce Applications) with [Code Institute](https://codeinstitute.net/). 
+
 
 
 [Back to top](<#contents>)
