@@ -106,7 +106,8 @@ def findCell(info_type, search_by):
 
 def retrieve_all_birthdays():
     """
-    Function to retrieve full list of Birthdays
+    Function to retrieve full list of Birthday entries
+    from google worksheet
     """
     all_birthdays = retrieve_records()
     print(Fore.BLACK + Back.WHITE + "\nNow retrieving all Birthdays...\n")
