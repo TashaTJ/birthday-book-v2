@@ -89,6 +89,21 @@ def another_task():
             raise SystemExit
 
 
+def retrieve_records():
+    """
+    Function to retrieve all records found
+    in the birthday book spreadhseet.
+    """
+    return BIRTHDAY_WORKSHEET.get_all_records(numericise_ignore=['all'])
+
+def findCell(info_type, search_by):
+    result = list(filter(
+        lambda record: record[info_type] == search_by or
+        search_by in record[info_type], retrieve_records()
+        ))
+    return result
+
+
 def run_programme():
     """
     This function calls on all other functions
