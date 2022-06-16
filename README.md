@@ -1,5 +1,8 @@
 # **Birthday Book - Project Portfolio 3 - Python**
 
+Birthday Book is a Command Line Interface styled application, designed for a user to access their contacts birthday's, retrieve specific age & date information, edit & delete existing birthday contacts, and add new birthday entries data. This project has been designed for educational purposes and uses the Code Institutes mock terminal to run.
+
+You can view the live program here: <a href ='' target="_blank"> Birthday Book Application</a>
 
 ![Birthday Book Image](docs/images/)
 
@@ -27,7 +30,7 @@
 
 # Objective
 
-
+The aim of this project is to deliver an easy and satisfiying command line interface directory that simplifies life for the user.
 
 [Back to top](<#contents>)
 
