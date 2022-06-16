@@ -153,6 +153,26 @@ def update_worksheet(row, col, value):
     print(Back.WHITE + Fore.BLACK + '\nChange saved\n')
 
 
+def save_to_worksheet(info):
+    """
+    Function used when saving a birthday
+    to make changes to the worksheet.
+    """
+    print(Fore.WHITE + Back.BLACK + f'\nNow saving {info}....\n')
+    worksheet_to_update = BIRTHDAY_WORKSHEET
+    worksheet_to_update.append_row(info)
+    print(Fore.BLACK + Back.WHITE + 'Save complete')
+
+    user_input = pyip.inputYesNo(Fore.BLACK + Back.WHITE + 
+        '\nWould you like to edit this birthday? (Y/N): '
+        )
+    if user_input == 'yes':
+        print(Fore.CYAN + Back.WHITE + '\nYou will now be taken to edit this birthday...\n')
+        edit_exisiting_birthday(info)
+    else:
+        another_task()
+
+
 def run_programme():
     """
     This function calls on all other functions
