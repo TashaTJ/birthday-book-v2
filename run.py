@@ -143,6 +143,16 @@ def print_records_in_loop(record):
     print("\n")
 
 
+def update_worksheet(row, col, value):
+    """
+    Function used when editing a birthday
+    to make changes to the worksheet.
+    """
+    worksheet_to_update = BIRTHDAY_WORKSHEET
+    worksheet_to_update.update_cell(row, col, value)
+    print(Back.WHITE + Fore.BLACK + '\nChange saved\n')
+
+
 def run_programme():
     """
     This function calls on all other functions
