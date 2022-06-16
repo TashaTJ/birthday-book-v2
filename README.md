@@ -88,7 +88,7 @@ Once selected, Search Birthdays allows the user to search the connected google w
 ## Add New Birthday
 
   * The 3rd feature accessible from the main menu, is the Add New Birthday feature
-  * Once selected, the user is asked to input a value for either First Name, Last Name, Age Turning, birthday, or Category. 
+  * Once selected, the user is asked to input a value for either First Name, Last Name, Age Turning, Birthday, or Category. 
   * Both names, phone number and category are required entries, the user can input NA for those not required.
   * Once all fields have been entered the entry is saved to the google sheet
   * The details are printed to the terminal and the user is asked if they want to edit the information.
@@ -291,13 +291,15 @@ The delete function would execute temprementally, until the below code was add:
 
 When there are 2 Birthday contacts with the same first name, and 1 of those entries is selected to be deleted, the programme will delete the first returned entry. This is due to the contact id not being specific enough and intefering with the age_turning coloumn integer. This could be fixed by creating more complex id names for each Birthday entry. 
 
-![Existing Bug](docs/images/)
-
 ## Terminal Compatibility
 
 Birthday Book is to be used and deployed via Heroku, and the terminal template provided by Code institute. It is not compatibal with a local terminal as certain display positioning would be affected, even if the functionality of the programme would be unaltered.
 
+### Heroku terminal:
+
 ![Heroku Terminal](assets/images/heroku-terminal-pp3.png)
+
+### Local Terminal:
 
 ![Local Terminal](assets/images/local-terminal-pp3.png)
 
@@ -344,12 +346,13 @@ Forking the GitHub account creates a copy of the Repository. Changes can be made
 
 # Credits
 
-* [Web Flow for Colour inspiration](https://webflow.com/?utm_medium=blog)
+* [README structure inspiration](https://lnkd.in/e_z-WR_9) - I took inspiration for the structure of my README from the sensational work of rhiannon mcnulty
+* [Web Flow for Colour inspiration](https://webflow.com/?utm_medium=blog) - for inspiration when styling
 * [Python tutorial for Lambda function](https://www.youtube.com/watch?v=P8MdDCTbMOI) - helped me understand lambda functions 
 * [Pyfiglet tutorial](https://www.youtube.com/watch?v=U1aUteSg2a4) - helped to figure out the best way to do this
-* [Figlet fonts sample](http://www.jave.de/figlet/fonts/overview.html)
-* [PyinputPlus documentation](https://pypi.org/project/PyInputPlus/) - for input validation
-* [Colorama tutorial](https://youtu.be/u51Zjlnui4Y) - Helped me understand the concept of try and except
+* [Figlet fonts sample](http://www.jave.de/figlet/fonts/overview.html) - Birthday Book heading ideas
+* [PyinputPlus documentation](https://pypi.org/project/PyInputPlus/) - for input validation understanding
+* [Colorama tutorial](https://youtu.be/u51Zjlnui4Y) - For all coloured text
 * [numericise_ignore=](https://stackoverflow.com/questions/43569966/pandas-ignore-non-numeric-values) - Used to fix the bug updating spreadsheet
 
 
