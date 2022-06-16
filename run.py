@@ -1,14 +1,14 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-import gspread 
+import gspread
 import pyfiglet
 import pyfiglet.fonts
 import colorama
 import pkg_resources
 import os
 from colorama import Fore, Back, Style
-from google.oauth2.service_account import Credentials 
+from google.oauth2.service_account import Credentials
 from pyfiglet import figlet_format
 import pyinputplus as pyip
 colorama.init(autoreset=True)
@@ -38,10 +38,10 @@ def user_response(message, min_value, max_value):
 
 def main_menu_():
     """
-    User selects a numbered option, 
+    User selects a numbered option,
     function uses their input and runs
     elif loop to trigger the next process.
-    If user inputs invalid choice, programme 
+    If user inputs invalid choice, programme
     will continue to ask for a valid input.
     """
     print(
@@ -49,7 +49,7 @@ def main_menu_():
  3. Edit Exisiting Birthday\n 4. Retrieve all Birthdays\n")
     while True:
         user_input = user_response(
-            Fore.BLACK + Back.WHITE + 
+            Fore.BLACK + Back.WHITE +
             "\nPlease enter a number from the above options: ", 1, 4
             )
         if user_input == 1:
@@ -69,23 +69,23 @@ def main_menu_():
 
 def another_task():
     """
-    Function returns user to the main menu if they'd 
+    Function returns user to the main menu if they'd
     like to perform another action
     """
     print(
-        Fore.BLACK + Back.WHITE + 
+        Fore.BLACK + Back.WHITE +
         "\nWould you like to perform another action?\n"
         )
     print("1. Yes, back to main menu\n\
 2. No, I'm done")
     while True:
         user_input = user_response(
-            Fore.BLACK + Back.WHITE + 
+            Fore.BLACK + Back.WHITE +
             "\nPlease enter a number from the above options: ", 1, 2
             )
         if user_input == 1:
             print(
-                Fore.BLACK + Back.WHITE + 
+                Fore.BLACK + Back.WHITE +
                 "\nReturning to the main menu...\n"
                 )
             main_menu_()
@@ -123,7 +123,7 @@ def retrieve_all_birthdays():
     print(Fore.BLACK + Back.WHITE + "\nNow retrieving all Birthdays...\n")
     for birthday in all_birthdays:
         print_records_in_loop(birthday)
-    
+
     another_task()
 
 
@@ -174,12 +174,12 @@ def save_to_worksheet(info):
     print(Fore.BLACK + Back.WHITE + 'Save complete')
 
     user_input = pyip.inputYesNo(
-        Fore.BLACK + Back.WHITE + 
+        Fore.BLACK + Back.WHITE +
         '\nWould you like to edit this birthday? (Y/N): '
         )
     if user_input == 'yes':
         print(
-            Fore.CYAN + Back.WHITE + 
+            Fore.CYAN + Back.WHITE +
             '\nYou will now be taken to edit this birthday...\n'
             )
         edit_exisiting_birthday(info)
@@ -234,7 +234,7 @@ def select_from_multiple_records(birthdays):
     print(Fore.BLACK + Back.WHITE + '\nList of birthdays to choose from: ')
     print_records_as_options(birthdays, print_records_in_loop)
     user_input = user_response(
-        Fore.BLACK + Back.WHITE + 
+        Fore.BLACK + Back.WHITE +
         '\nEnter the record number of the birthday you would like to action: ',
         0, len(birthdays)
         )
@@ -298,11 +298,11 @@ def search(info_type):
             main_menu_()
     else:
         print(
-            Fore.WHITE + Back.RED + 
+            Fore.WHITE + Back.RED +
             "\nNo Birthday with that name found\n"
             )
         print(
-            Fore.BLACK + Back.WHITE + 
+            Fore.BLACK + Back.WHITE +
             '\nYou will now be taken back to search again...\n'
             )
         search_birthday()
@@ -346,14 +346,14 @@ def edit_birthday_from_menu():
 you will first need to search for them.\n'
         )
     print(Fore.BLACK + Back.WHITE + '\nTaking you to search now...\n')
-    search_birthday() 
+    search_birthday()
 
 
 def validate_next_birthday():
     """
-    Fuction to validate the next birthday is input 
+    Fuction to validate the next birthday is input
     in the correct format as 01/02/2022
-    """ 
+    """
     while True:
         next_birthday = str(pyip.inputStr('*Birthday: '))
         if len(next_birthday) <= 9 or len(next_birthday) >= 11:
@@ -399,7 +399,7 @@ def add_new_birthday():
 def edit(birthday, cell_index, info_type):
     """
     Allows user to update cells by adding new entry
-    """    
+    """
     # Converts to a string first to allow any integers to be searched for.
     cell = BIRTHDAY_WORKSHEET.find(birthday[cell_index])
     new_value = pyip.inputStr(f'Enter new {info_type}:').capitalize()
@@ -432,7 +432,7 @@ want to delete this birthday? (Y/N): ')
 
 def edit_exisiting_birthday(birthday):
     """
-    Allows user to edit exisiting birthday entry 
+    Allows user to edit exisiting birthday entry
     by individual input fields
     """
     print(birthday)
@@ -440,7 +440,7 @@ def edit_exisiting_birthday(birthday):
 \n 1. First Name\n 2. Last Name\n 3. Age Turning\n \
 4. Next Birthday\n 5. Category\n 6. Exit')
     user_input = user_response(
-        Fore.BLACK + Back.WHITE + 
+        Fore.BLACK + Back.WHITE +
         "\n Please enter an option number: ", 1, 7
         )
     if user_input == 1:
@@ -479,7 +479,7 @@ def edit_exisiting_birthday(birthday):
     else:
         another_task()
     user_input = pyip.inputYesNo(
-        Fore.BLACK + Back.WHITE + 
+        Fore.BLACK + Back.WHITE +
         "\nWould you like to edit another field? (Y/N): "
         )
     if user_input == 'yes':
