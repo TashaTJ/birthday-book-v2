@@ -283,6 +283,31 @@ def search(info_type):
         search_birthday()
 
 
+def search_birthday():
+    """
+    Allows user to search for birthday entry by first name,
+    last name or category
+    """
+    print("\nSearch by...\n\
+1. By First name\n\
+2. By Last name\n\
+3. By Category\n\
+4. Exit\n")
+    while True:
+        user_input = user_response(Fore.BLACK + Back.WHITE +
+            "\nPlease enter a number from the above options: ", 1, 4
+            )
+        if user_input == 1:
+            search('first_name')
+        elif user_input == 2:
+            search('last_name')
+        elif user_input == 3:
+            search('category')
+        else:
+            another_task()
+        return False
+
+
 def run_programme():
     """
     This function calls on all other functions
