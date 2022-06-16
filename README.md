@@ -255,15 +255,15 @@ The following function runs:
 
 The minimum and maximum value parameters ensure the user is only able to enter the numbers present in the menu. If they don't, the following error message is displayed:  
 
-![](assets/images/invalid_entry1.png)
+![max 4](assets/images/max-4-pp3.png)
 
 I utilised pyinputplus methods for integer & string inputs:
 
-![](assets/images/input_validation_code.png)
+![pyinputplus methods](assets/images/py-validation-pp3.png)
 
 I added an additional validate_next_birthday function for date entries which allows inputs of only 10 characters and no alphabet characters. If the date entered does not pass the validation an error message is thrown:
 
-![](assets/images/)
+![validate date](assets/images/validate-date-pp3.png)
 
 [Back to top](<#contents>)
 
@@ -271,7 +271,7 @@ I added an additional validate_next_birthday function for date entries which all
 
 ### Bug 1
 
-Initially the category coloumn of the google sheet was not being updated when editing that field from the App. This was due to a logic error and fixed by creating a new variable category_input, line 434, ass opposed to user_input as it was before. 
+Initially the category coloumn of the google sheet was not being updated when editing that field from the App. This was due to a logic error and fixed by creating a new variable category_input, line 434, as opposed to user_input as it was before. 
  
 <details><summary>Bugs Fixed info</summary>
 
