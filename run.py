@@ -178,7 +178,10 @@ def save_to_worksheet(info):
         '\nWould you like to edit this birthday? (Y/N): '
         )
     if user_input == 'yes':
-        print(Fore.CYAN + Back.WHITE + '\nYou will now be taken to edit this birthday...\n')
+        print(
+            Fore.CYAN + Back.WHITE + 
+            '\nYou will now be taken to edit this birthday...\n'
+            )
         edit_exisiting_birthday(info)
     else:
         another_task()
@@ -230,9 +233,11 @@ def select_from_multiple_records(birthdays):
 
     print(Fore.BLACK + Back.WHITE + '\nList of birthdays to choose from: ')
     print_records_as_options(birthdays, print_records_in_loop)
-    user_input = user_response(Fore.BLACK + Back.WHITE + 
+    user_input = user_response(
+        Fore.BLACK + Back.WHITE + 
         '\nEnter the record number of the birthday you would like to action: ',
-        0, len(birthdays))
+        0, len(birthdays)
+        )
     return birthdays[user_input]
 
 
@@ -253,7 +258,9 @@ def search(info_type):
             category = "General"
         search_by = category
     else:
-        search_by = pyip.inputStr(Fore.BLACK + Back.WHITE + f'\nEnter {info_type}: ').capitalize()
+        search_by = pyip.inputStr(
+            Fore.BLACK + Back.WHITE + f'\nEnter {info_type}: '
+            ).capitalize()
     # Filter function used to search within the worksheet
     result = findCell(info_type, search_by)
 
@@ -263,7 +270,8 @@ def search(info_type):
         print_records(result)
         print('1. Edit birthday(s)\n2. Delete birthday(s)\n\
 3. Back to main menu\n')
-        user_input = user_response(Fore.BLACK + Back.WHITE +
+        user_input = user_response(
+            Fore.BLACK + Back.WHITE +
             "\nPlease enter a number from the above options: ", 1, 3
             )
         """
@@ -289,8 +297,14 @@ def search(info_type):
         else:
             main_menu_()
     else:
-        print(Fore.WHITE + Back.RED + "\nNo Birthday with that name found\n")
-        print(Fore.BLACK + Back.WHITE + '\nYou will now be taken back to search again...\n')
+        print(
+            Fore.WHITE + Back.RED + 
+            "\nNo Birthday with that name found\n"
+            )
+        print(
+            Fore.BLACK + Back.WHITE + 
+            '\nYou will now be taken back to search again...\n'
+            )
         search_birthday()
 
 
@@ -305,7 +319,8 @@ def search_birthday():
 3. By Category\n\
 4. Exit\n")
     while True:
-        user_input = user_response(Fore.BLACK + Back.WHITE +
+        user_input = user_response(
+            Fore.BLACK + Back.WHITE +
             "\nPlease enter a number from the above options: ", 1, 4
             )
         if user_input == 1:
@@ -325,7 +340,8 @@ def edit_birthday_from_menu():
     main menu. The user will need to search for
     the required birthday first.
     """
-    print(Fore.WHITE + Back.CYAN +
+    print(
+        Fore.WHITE + Back.CYAN +
         '\nIn order to edit a birthday, \
 you will first need to search for them.\n'
         )
@@ -423,7 +439,10 @@ def edit_exisiting_birthday(birthday):
     print(Fore.BLACK + Back.WHITE + '\nWhich field would you like to edit? \
 \n 1. First Name\n 2. Last Name\n 3. Age Turning\n \
 4. Next Birthday\n 5. Category\n 6. Exit')
-    user_input = user_response(Fore.BLACK + Back.WHITE + "\n Please enter an option number: ", 1, 7)
+    user_input = user_response(
+        Fore.BLACK + Back.WHITE + 
+        "\n Please enter an option number: ", 1, 7
+        )
     if user_input == 1:
         edit(birthday, 0, 'first name')
         print(birthday)
@@ -459,8 +478,10 @@ def edit_exisiting_birthday(birthday):
         pass
     else:
         another_task()
-    user_input = pyip.inputYesNo(Fore.BLACK + Back.WHITE + 
-        "\nWould you like to edit another field? (Y/N): ")
+    user_input = pyip.inputYesNo(
+        Fore.BLACK + Back.WHITE + 
+        "\nWould you like to edit another field? (Y/N): "
+        )
     if user_input == 'yes':
         edit_exisiting_birthday(birthday)
     else:
