@@ -371,8 +371,7 @@ def add_new_birthday():
     Function allows user to add new birthday entry data
     """
     print(Fore.WHITE + Back.CYAN + '\nTo add a new Birthday please enter the details below.\n\
-\nAll fields with a * are required.\n\
-\nType NA for any fields you wish to leave blank.\n')
+\nAll fields with a * are required.\n')
     first_name = pyip.inputStr('*First Name: ').capitalize()
     last_name = pyip.inputStr('*Last Name: ').capitalize()
     age_turning = pyip.inputInt('*Age Turning: ')
