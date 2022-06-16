@@ -226,12 +226,13 @@ I added an additional validate_next_birthday function for date entries whihc all
 
 ## Bugs Fixed
 
-<details><summary>Bugs Fixed info</summary>
-
 ### Bug 1
 
-![bug 1](docs/images/)
+Initially the category coloumn of the google sheet was not being updated when editing that field from the App. This was due to a logic error and fixed by creating a new variable category_input, line 434, ass opposed to user_input as it was before. 
+ 
+<details><summary>Bugs Fixed info</summary>
 
+![bug 1](docs/images/)
 
 ### Bug 2
 
@@ -246,7 +247,9 @@ I added an additional validate_next_birthday function for date entries whihc all
 
 [Back to top](<#contents>)
 
-## Exsiting Bugs 
+## Existing Bugs 
+
+When there are 2 Birthday contacts with the same first name, and 1 of those entries is selected to be deleted, the programme will delete the first returned entry. This is due to the contact id not being specific enough and intefering with the age_turning coloumn integer. This could be fixed by creating more complex id names for each Birthday entry.  
 
 ## Terminal Compatibility
 
