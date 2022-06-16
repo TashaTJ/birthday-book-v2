@@ -177,9 +177,19 @@ Google Sheets was used to store all the data for the Birthday Book. Data was sen
 
 <details><summary> Manual Testing Info</summary>
 
-### Welcome screen
+### Main Menu
+
+verified that -
+* Only numbers 1 - 4 can be chosen as options 
+* Only integers can be input here 
+* That each number takes the user to the correct menu option
 
 ### Search birthdays
+
+verified that -
+* Only numbers 1 - 4 can be chosen as options 
+* Only integers can be input  
+* That each number takes the user to the correct menu option
 
 ### Add New Birthday
 
