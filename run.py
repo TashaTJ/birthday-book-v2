@@ -117,6 +117,16 @@ def retrieve_all_birthdays():
     another_task()
 
 
+def print_records(records, function=None):
+    """
+    Function to print a single birthday contact.
+    To be used in the birthday search functions.
+    """
+    print(Fore.BLACK + Back.WHITE + "\nNow printing your birthdays(s)...\n")
+    for record in records:
+        print_records_in_loop(record)
+
+
 def run_programme():
     """
     This function calls on all other functions
