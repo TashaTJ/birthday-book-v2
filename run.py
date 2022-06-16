@@ -381,6 +381,28 @@ def edit(birthday, cell_index, info_type):
     update_worksheet(cell.row, cell.col, new_value)
 
 
+def delete(birthday, index):
+    """
+    Retrieves cell index based upon search
+    and allows the user to update cell by
+    adding a new entry.
+    """
+    print(birthday)
+    birthday_id = str(birthday[index])
+    birthday_row = BIRTHDAY_WORKSHEET.find(birthday[0])
+    row_number = birthday_row.row
+    user_input = pyip.inputYesNo(Fore.WHITE + Back.RED + '\nAre you sure you \
+want to delete this birthday? (Y/N): ')
+    if user_input == 'yes':
+        print(Fore.WHITE + Back.RED + f'\n{birthday} \
+\n now being deleted...\n')
+        BIRTHDAY_WORKSHEET.delete_rows(row_number)
+        print(Fore.BLACK + Back.WHITE + '\nDeletion complete\n')
+        another_task()
+    else:
+        another_task()
+
+
 def run_programme():
     """
     This function calls on all other functions
