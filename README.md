@@ -190,17 +190,35 @@ verified that -
 * Only numbers 1 - 4 can be chosen as options 
 * Only integers can be input  
 * That each number takes the user to the correct menu option
+* At the end of action the user can exit or return to main menu 
 
 ### Add New Birthday
 
+verified that -
+* 1st & 2nd names can be added and capitalized as they are saved to the worksheet 
+* Only integers can be input in the Age Turning field  
+* The birthday must be in the correct format of 20/01/2023
+* At the end of action the user can exit or return to main menu 
+
 ### Edit Existing Birthday
 
+verified that -
+* Programme returns message if no records found
+* Programme returns correct entries 
+* All fields can be updated and save to the google sheet successfully
+* At the end of action the user can exit or return to main menu 
+
+
 ### Retrieve all Birthdays
-  
+
+verified that -
+* Programme retreives and prints all Birthday entries and prints them back to the user. 
+* At the end of action the user can exit or return to main menu 
+ 
 ### Exit
 
-### Other
-
+verified that -
+* When choosing to leave the programme there's an 'Exiting programme..' message, so the user knows they are at the end
 
 </details>
 
