@@ -173,9 +173,11 @@ Google Sheets was used to store all the data for the Birthday Book. Data was sen
 
 ## PEP8 Validation
 
-[PEP8](http://pep8online.com/) Online validation was used to check that the code is up to standard. All pages cleared the PEP8 validation with no errors.
+Online validation was used to check that the code is up to standard. All pages cleared the PEP8 validation with no errors.
 
 [PEP8](http://pep8online.com/) 
+
+![PEP8 validation](assets/images/pep8-validation-pp3.png)
 
 ## Manual Testing
 
