@@ -269,13 +269,19 @@ I added an additional validate_next_birthday function for date entries which all
 
 ## Bugs Fixed
 
+<details><summary>Bugs Fixed info</summary>
+
 ### Bug 1
 
 Initially the category coloumn of the google sheet was not being updated when editing that field from the App. This was due to a logic error and fixed by creating a new variable category_input, line 434, as opposed to user_input as it was before. 
- 
-<details><summary>Bugs Fixed info</summary>
 
-![bug 1](docs/images/)
+![bug 1](assets/images/bug-1-pp3.png)
+
+### Bug 2 
+
+The delete function would execute temprementally, until the below code was add:
+
+![bug 2](assets/images/numericise-all-pp3.png)
 
 </details>
 
