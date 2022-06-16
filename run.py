@@ -403,6 +403,59 @@ want to delete this birthday? (Y/N): ')
         another_task()
 
 
+def edit_exisiting_birthday(birthday):
+    """
+    Allows user to edit exisisting birthday entry 
+    by individual input fields
+    """
+    print(birthday)
+    print(Fore.BLACK + Back.WHITE + '\nWhich field would you like to edit? \
+\n 1. First Name\n 2. Last Name\n 3. Age Turning\n \
+4. Next Birthday\n 5. Category\n 6. Exit')
+    user_input = user_response(Fore.BLACK + Back.WHITE + "\n Please enter an option number: ", 1, 7)
+    if user_input == 1:
+        edit(birthday, 0, 'first name')
+        print(birthday)
+        pass
+    elif user_input == 2:
+        edit(birthday, 1, 'last name')
+        print(birthday)
+        pass
+    elif user_input == 3:
+        edit(birthday, 2, 'age turning')
+        print(birthday)
+        pass
+    elif user_input == 4:
+        edit(birthday, 3, 'next birthday')
+        print(birthday)
+        pass
+    elif user_input == 5:
+        cell = BIRTHDAY_WORKSHEET.find(birthday[0])
+        category_input = user_response(Fore.BLACK + Back.WHITE + '*Choose category: 1. Friends, \
+2. Favourites, 3. Family or 4. General: ', 1, 4)
+        if category_input == 1:
+            new_value = "Friends"
+        elif category_input == 2:
+            new_value = "Favourites"
+        elif category_input == 3:
+            new_value = "Family"
+        else:
+            new_value = "General"
+        birthday[4] = new_value
+        print(Fore.BLACK + Back.WHITE + '\nCategory now being updated...\n')
+        update_worksheet(cell.row, user_input, new_value)
+        print(birthday)
+        pass
+    else:
+        another_task()
+    user_input = pyip.inputYesNo(Fore.BLACK + Back.WHITE + 
+        "\nWould you like to edit another field? (Y/N): ")
+    if user_input == 'yes':
+        edit_exisiting_birthday(birthday)
+    else:
+        another_task()
+
+
 def run_programme():
     """
     This function calls on all other functions
