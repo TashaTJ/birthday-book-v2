@@ -37,7 +37,7 @@ def user_response(message, min_value, max_value):
 
 def main_menu_():
     """
-    User selects which action to do, 
+    User selects a numbered option, 
     function uses their input and runs
     elif loop to trigger the next process.
     If user inputs invalid choice, programme 
