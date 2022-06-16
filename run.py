@@ -104,6 +104,18 @@ def findCell(info_type, search_by):
     return result
 
 
+def retrieve_all_birthdays():
+    """
+    Function to retrieve full list of Birthdays
+    """
+    all_birthdays = retrieve_records()
+    print(Fore.BLACK + Back.WHITE + "\nNow retrieving all Birthdays...\n")
+    for birthday in all_birthdays:
+        print_records_in_loop(birthday)
+    
+    another_task()
+
+
 def run_programme():
     """
     This function calls on all other functions
