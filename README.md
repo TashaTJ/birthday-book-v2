@@ -39,7 +39,7 @@ The aim of this project is to deliver an easy and satisfiying command line inter
 ## Site Aims
 
 * To provide the user with a simple app that allows them to find contact's birthday's quickly 
-* To create an app the user is more than happy to return to based on ease of use and functionality
+* To create an app the user is more than happy to return to, based on ease of use and functionality
 * To provide an interactive experience that's easy to navigate and understand
 * To provide a clear and appropriate response to any user inputs
 
@@ -55,7 +55,7 @@ The **user** is any person who likes productivity and organisation apps, partocu
 | 2   | USER |    I want to be able to navigate around the interface easily               |          so I feel like returning           |
 | 3   | USER |          I want to know what app does from the opening message             |        So as to avoid any confusion         |
 | 4   | USER |       I want to retrieve a contact's information based upon their name     |       So I can execute action quickly       |
-| 5   | USER |               I want to add new contact information                        |          to keep information current        |
+| 5   | USER |               I want to add new birthday information                       |           to keep information current       |
 | 6   | USER |     I want to update an existing entry if there's been a change            |           So I can stay organised           |
 | 7   | USER |   I want to be able to retrieve entries by category (family/friends)       |         to streamline my searching          |   
 
