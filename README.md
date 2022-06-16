@@ -159,6 +159,8 @@ User's could set up a text reminder so they'd never have to forget giving mum a 
 
 # Data Model
 
+Google Sheets was used to store all the data for the Birthday Book. Data was sent to and retrieved from it. The google sheet had a singular worksheet which stored all the data. The columns of the worksheet provided the different entry fields for the birthday data. 
+
 ![Google sheets](docs/images/)
 
 [Back to top](<#contents>)
@@ -167,14 +169,11 @@ User's could set up a text reminder so they'd never have to forget giving mum a 
 
 ## PEP8 Validation
 
+[PEP8](http://pep8online.com/) Online validation was used to check that the code is up to standard. All pages cleared the PEP8 validation with no errors.
+
 [PEP8](http://pep8online.com/) 
 
-### run.py
-
-![run.py PEP8 test result](docs/images/)
-
 ## Manual Testing
-
 
 <details><summary> Manual Testing Info</summary>
 
@@ -197,7 +196,31 @@ User's could set up a text reminder so they'd never have to forget giving mum a 
 
 [Back to top](<#contents>)  
 
-## Validation  
+## Validation 
+
+Birthday Book relies heavily on information input, so validation of this data is paramount to the correct functionality of the app.
+I used the `pyinputplus` module which offers in built validation.
+
+* the users are presented with a numbered menu, 
+* they then must input their choice 
+
+The following function runs: 
+
+`def user_response(message, min_value, max_value):    
+    input = pyip.inputInt(prompt=message, min=min_value, max=max_value)  
+    return input`    
+
+The minimum and maximum value parameters ensure the user is only able to enter the numbers present in the menu, if they do not then the following error message is displayed:  
+
+![](assets/images/invalid_entry1.png)
+
+pyinputplus also has methods for email & string inputs, which you can see being used below:
+
+![](assets/images/input_validation_code.png)
+
+I added an additional validate_next_birthday function for date entries whihc allows inputs of only 10 characters and no alphabetical characters. If the date entered does not pass the validation an error message is thrown:
+
+![](assets/images/)
 
 [Back to top](<#contents>)
 
