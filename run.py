@@ -105,6 +105,7 @@ def retrieve_records():
     """
     return BIRTHDAY_WORKSHEET.get_all_records(numericise_ignore=['all'])
 
+
 def findCell(info_type, search_by):
     result = list(filter(
         lambda record: record[info_type] == search_by or
