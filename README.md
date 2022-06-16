@@ -238,15 +238,15 @@ The following function runs:
     input = pyip.inputInt(prompt=message, min=min_value, max=max_value)  
     return input`    
 
-The minimum and maximum value parameters ensure the user is only able to enter the numbers present in the menu, if they do not then the following error message is displayed:  
+The minimum and maximum value parameters ensure the user is only able to enter the numbers present in the menu. If they don't, the following error message is displayed:  
 
 ![](assets/images/invalid_entry1.png)
 
-pyinputplus also has methods for email & string inputs, which you can see being used below:
+I utilised pyinputplus methods for integer & string inputs:
 
 ![](assets/images/input_validation_code.png)
 
-I added an additional validate_next_birthday function for date entries whihc allows inputs of only 10 characters and no alphabetical characters. If the date entered does not pass the validation an error message is thrown:
+I added an additional validate_next_birthday function for date entries which allows inputs of only 10 characters and no alphabet characters. If the date entered does not pass the validation an error message is thrown:
 
 ![](assets/images/)
 
@@ -273,6 +273,8 @@ When there are 2 Birthday contacts with the same first name, and 1 of those entr
 ![Existing Bug](docs/images/)
 
 ## Terminal Compatibility
+
+Birthday Book is to be used and deployed via Heroku, and the terminal template provided by Code institute. It is not compatibal with a local terminal as certain display positioning would be affected, even if the functionality of the programme would be unaltered.
 
 ![Heroku Terminal](docs/images/heroku-terminal.png)
 
@@ -320,6 +322,7 @@ Forking the GitHub account creates a copy of the Repository. Changes can be made
 [Back to top](<#contents>)
 
 # Credits
+
 
 [Back to top](<#contents>)
 
