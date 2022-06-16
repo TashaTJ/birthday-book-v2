@@ -38,7 +38,7 @@ The aim of this project is to deliver an easy and satisfiying command line inter
 
 ## Site Aims
 
-* To provide the user with a simple app that allows them to find contact's birthdays quickly 
+* To provide the user with a simple app that allows them to find contact's birthday's quickly 
 * To create an app the user is more than happy to return to based on ease of use and functionality
 * To provide an interactive experience that's easy to navigate and understand
 * To provide a clear and appropriate response to any user inputs
