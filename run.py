@@ -91,8 +91,10 @@ def another_task():
             main_menu_()
             break
         else:
-            print(Fore.CYAN +
-                "Exiting programme...\n")
+            print(
+                Fore.CYAN +
+                "Exiting programme...\n"
+                )
             raise SystemExit
 
 
