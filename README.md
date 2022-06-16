@@ -98,6 +98,14 @@ Once selected, Search Birthdays allows the user to search the connected google w
 
 
 ## Edit Existing Birthday
+
+* third option in the main menu is Edit Existing Birthday. On selection they'll first be taken to search for the entry they wish to edit.
+* after locating the required entry, the app will ask the user if they'd like to edit this entry by typing Y/N
+* If Y, they'll then be able to select which field of the entry they'd like to alter. 
+* The user makes the relevant changes and saves, with a reasuring message from the app that prints the updated entry.
+* The worksheet is updated with the new birthday information.
+
+
 ![Edit Existing Birthday](docs/images/)
 
 
