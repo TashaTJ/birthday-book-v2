@@ -225,6 +225,64 @@ def select_from_multiple_records(birthdays):
     return birthdays[user_input]
 
 
+def search(info_type):
+    """
+    Returns a result based on user input and info type selected
+    """
+    if info_type == 'category':
+        user_input = user_response(Fore.BLACK + Back.WHITE + '*Choose category to search by: 1. Friends, \
+2. Favourites, 3. Family or 4. General: ', 1, 4)
+        if user_input == 1:
+            category = "Friends"
+        elif user_input == 2:
+            category = "Favourites"
+        elif user_input == 3:
+            category = "Family"
+        else:
+            category = "General"
+        search_by = category
+    else:
+        search_by = pyip.inputStr(Fore.BLACK + Back.WHITE + f'\nEnter {info_type}: ').capitalize()
+    # Filter function used to search within the worksheet
+    result = findCell(info_type, search_by)
+
+    # If there are any results found
+    if len(result) != 0:
+        print(Fore.BLACK + Back.WHITE + "\nBirthday found\n")
+        print_records(result)
+        print('1. Edit birthday(s)\n2. Delete birthday(s)\n\
+3. Back to main menu\n')
+        user_input = user_response(Fore.BLACK + Back.WHITE +
+            "\nPlease enter a number from the above options: ", 1, 3
+            )
+        """
+        If there is more than one birthday returned
+        the user needs to be able to choose which
+        birthday to edit or delete which is done using the
+        select_from_multiple_records function.
+        """
+        if user_input == 1:
+            # Edit
+            if len(result) == 1:
+                convert_to_list_action(result[0], 'edit')
+            elif len(result) > 1:
+                birthday_choice = select_from_multiple_records(result)
+                convert_to_list_action(birthday_choice, 'edit')
+        # Delete
+        elif user_input == 2:
+            if len(result) == 1:
+                convert_to_list_action(result[0], 'delete')
+            elif len(result) > 1:
+                birthday_choice = select_from_multiple_records(result)
+                convert_to_list_action(birthday_choice, 'delete')
+        else:
+            main_menu_()
+    else:
+        print(Fore.WHITE + Back.RED + "\nNo Birthday with that name found\n")
+        print(Fore.BLACK + Back.WHITE + '\nYou will now be taken back to search again...\n')
+        search_birthday()
+
+
 def run_programme():
     """
     This function calls on all other functions
