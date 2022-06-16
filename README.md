@@ -130,7 +130,11 @@ A Bot could be built using Twilio, to generate and send a birthday text on each 
 
 Zapier could be used here to set up an automated email card on each individuals birthday.
 
-## Automated birthday reminders 
+## Automatic Yearly Updates
+
+The next_birthday and age_turning coloumns in the worksheet, could be updated each new year. The code could be written in Python using datetime and some simple equations. 
+
+## Automated Birthday reminders 
 
 User's could set up a text reminder so they'd never have to forget giving mum a call on her birthday! 
 
