@@ -323,6 +323,14 @@ Forking the GitHub account creates a copy of the Repository. Changes can be made
 
 # Credits
 
+* [Web Flow for Colour inspiration](https://webflow.com/?utm_medium=blog)
+* [Python tutorial for Lambda function](https://www.youtube.com/watch?v=P8MdDCTbMOI) - helped me understand lambda functions 
+* [Pyfiglet tutorial](https://www.youtube.com/watch?v=U1aUteSg2a4) - helped to figure out the best way to do this
+* [Figlet fonts sample](http://www.jave.de/figlet/fonts/overview.html)
+* [PyinputPlus documentation](https://pypi.org/project/PyInputPlus/) - for input validation
+* [Colorama tutorial](https://youtu.be/u51Zjlnui4Y) - Helped me understand the concept of try and except
+* [numericise_ignore=](https://stackoverflow.com/questions/43569966/pandas-ignore-non-numeric-values) - Used to fix the bug updating spreadsheet
+
 
 [Back to top](<#contents>)
 
