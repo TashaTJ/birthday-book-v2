@@ -48,7 +48,8 @@ def main_menu_():
         "\n 1. Search Birthdays\n 2. Add a new Birthday\n\
  3. Edit Exisiting Birthday\n 4. Retrieve all Birthdays\n")
     while True:
-        user_input = user_response(Fore.BLACK + Back.WHITE + 
+        user_input = user_response(
+            Fore.BLACK + Back.WHITE + 
             "\nPlease enter a number from the above options: ", 1, 4
             )
         if user_input == 1:
@@ -71,15 +72,22 @@ def another_task():
     Function returns user to the main menu if they'd 
     like to perform another action
     """
-    print(Fore.BLACK + Back.WHITE + "\nWould you like to perform another action?\n")
+    print(
+        Fore.BLACK + Back.WHITE + 
+        "\nWould you like to perform another action?\n"
+        )
     print("1. Yes, back to main menu\n\
 2. No, I'm done")
     while True:
-        user_input = user_response(Fore.BLACK + Back.WHITE + 
+        user_input = user_response(
+            Fore.BLACK + Back.WHITE + 
             "\nPlease enter a number from the above options: ", 1, 2
             )
         if user_input == 1:
-            print(Fore.BLACK + Back.WHITE + "\nReturning to the main menu...\n")
+            print(
+                Fore.BLACK + Back.WHITE + 
+                "\nReturning to the main menu...\n"
+                )
             main_menu_()
             break
         else:
