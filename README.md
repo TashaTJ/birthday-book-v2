@@ -297,9 +297,9 @@ When there are 2 Birthday contacts with the same first name, and 1 of those entr
 
 Birthday Book is to be used and deployed via Heroku, and the terminal template provided by Code institute. It is not compatibal with a local terminal as certain display positioning would be affected, even if the functionality of the programme would be unaltered.
 
-![Heroku Terminal](docs/images/heroku-terminal.png)
+![Heroku Terminal](assets/images/heroku-terminal-pp3.png)
 
-![Local Terminal](docs/images/local-terminal.png)
+![Local Terminal](assets/images/local-terminal-pp3.png)
 
 [Back to top](<#contents>)
 
