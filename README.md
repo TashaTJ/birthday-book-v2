@@ -309,7 +309,7 @@ Birthday Book is to be used and deployed via Heroku, and the terminal template p
 
 ## Deployment to Heroku
 
-* Create a Heroku account and login
+* Create a [Heroku](https://dashboard.heroku.com/apps) account and login
 * Click 'New' from the dashboard, underneath the header in the top right corner
 * Click 'Create new app' option
 * Enter your unique application name, select your region and then click 'Create App'
