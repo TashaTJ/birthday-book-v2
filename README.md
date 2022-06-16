@@ -106,14 +106,14 @@ Once selected, Search Birthdays allows the user to search the connected google w
 * The worksheet is updated with the new birthday information.
 
 
-![Edit Existing Birthday](docs/images/)
+![Edit Existing Birthday](assets/images/edit-existing-feature-pp3.png)
 
 
 ## Retrieve all Birthdays
 
 * lastly from the main menu, When selected, Retrieve all Birthday's prints all birthday entries to the terminal  
 
-![Menu example of 4 options](docs/images/)
+![Retrieve all Birthdays](assets/images/retrieve-feature-pp3.png)
 
 
 # Future Features
