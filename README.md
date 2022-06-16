@@ -71,20 +71,19 @@ The **user** is any person who likes productivity and organisation apps, partocu
 
 # Features
 
-
+There are 4 main features in the Birthday Book, which are numbered in the main menu:
 
 ![Main Menu](assets/images/)
-
-## Retrieve all Birthdays
-
-![Menu example of 4 options](docs/images/)
-
  
 ## Search Birthdays
 
+Once selected, Search Birthdays allows the user to search the connected google worksheet by either
+
+  * First name
+  * Last name
+  * Category
+
 ![Search Birthdays](docs/images/)
-
-
 
 ## Add New Birthday
 ![Add New Birthday](docs/images/)
@@ -92,6 +91,11 @@ The **user** is any person who likes productivity and organisation apps, partocu
 
 ## Edit Existing Birthday
 ![Edit Existing Birthday](docs/images/)
+
+
+## Retrieve all Birthdays
+
+![Menu example of 4 options](docs/images/)
 
 
 # Future Features
