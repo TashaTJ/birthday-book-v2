@@ -25,3 +25,15 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('birthday_book_v2')
 BIRTHDAY_WORKSHEET = SHEET.worksheet('birthdays')
 
+
+def run_programme():
+    print(pyfiglet.figlet_format('BIRTHDAY  BOOK \
+\n', font='smslant', justify="center"))
+    print(Back.CYAN + '\nInstructions:\n\
+- From the menu, type a number and then press enter.\n\
+- For a Y or N choice, please type Y or N and press enter.\n\
+- To restart the programme, press the "Run Programme" at the top.')
+    print(Fore.BLACK + Back.WHITE + '\nmain menu...\n')
+    main_menu_()
+
+run_programme()
