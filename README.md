@@ -86,6 +86,14 @@ Once selected, Search Birthdays allows the user to search the connected google w
 ![Search Birthdays](docs/images/)
 
 ## Add New Birthday
+
+  * The 3rd feature accessible from the main menu, is the Add New Birthday feature
+  * Once selected, the user is asked to input a value for either First Name, Last Name, Age Turning, birthday, or Category. 
+  * Both names, phone number and category are required entries, the user can input NA for those not required.
+  * Once all fields have been entered the entry is saved to the google sheet
+  * The details are printed to the terminal and the user is asked if they want to edit the information.
+  * If they do, they'll be taken to edit the contact, otherwise they can go back to the main menu.
+
 ![Add New Birthday](docs/images/)
 
 
