@@ -405,7 +405,7 @@ want to delete this birthday? (Y/N): ')
 
 def edit_exisiting_birthday(birthday):
     """
-    Allows user to edit exisisting birthday entry 
+    Allows user to edit exisiting birthday entry 
     by individual input fields
     """
     print(birthday)
