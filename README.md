@@ -165,7 +165,7 @@ User's could set up a text reminder so they'd never have to forget giving mum a 
 
 Google Sheets was used to store all the data for the Birthday Book. Data was sent to and retrieved from it. The google sheet had a singular worksheet which stored all the data. The columns of the worksheet provided the different entry fields for the birthday data. 
 
-![Google sheets](docs/images/)
+![Google sheets](assets/images/google-sheets-pp3.png)
 
 [Back to top](<#contents>)
 
