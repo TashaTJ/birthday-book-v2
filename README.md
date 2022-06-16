@@ -138,22 +138,22 @@ User's could set up a text reminder so they'd never have to forget giving mum a 
 
 # Technologies Used
 
-* [HTML5]
-* [CSS3]
-* [Python]
-* [Google Chrome DevTools]
-* [Lucidchart]
-* [Google sheets]
-* [Gitpod]
-* [Heroku]
+* [HTML5](https://en.wikipedia.org/wiki/HTML5) - to provide some structure to the program
+* [CSS3](https://en.wikipedia.org/wiki/CSS) - to provide the styling for the program
+* [Python](https://www.python.org/) - To provide the functionality to the program
+* [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) - Used to debug
+* [Lucidchart](https://www.lucidchart.com/pages/tour) - Used to create the flow chart
+* [Google sheets](https://www.google.co.uk/sheets/about/) - used to host the programs data
+* [Gitpod](https://www.gitpod.io/) - Used to create, edit and compile the code for the program
+* [Heroku](https://dashboard.heroku.com/apps) Used to deploy application.
 
 ## Python Libraries
 
-* [gspread]
-* [Google Auth]
-* [colorama]
-* [pyfiglet]
-* [PyInputPlus]
+* [gspread](https://google-auth.readthedocs.io/en/master/) allows communication with Google Sheets
+* [Google Auth](https://google-auth.readthedocs.io/en/master/) Used to provide access for the app to interact with google sheet.
+* [colorama](https://pypi.org/project/colorama/) allows terminal text to be printed in different colors
+* [pyfiglet](https://pypi.org/project/pyfiglet/0.7/) - used to access figlet fonts
+* [PyInputPlus](https://pypi.org/project/PyInputPlus/) - used to validate user inputs
 
 [Back to top](<#contents>)
 
