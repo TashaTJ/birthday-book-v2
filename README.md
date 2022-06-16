@@ -234,22 +234,15 @@ Initially the category coloumn of the google sheet was not being updated when ed
 
 ![bug 1](docs/images/)
 
-### Bug 2
-
-![bug 2](docs/images/)
-
-### Bug 3
-
-![bug 3](docs/images/)
-
-
 </details>
 
 [Back to top](<#contents>)
 
 ## Existing Bugs 
 
-When there are 2 Birthday contacts with the same first name, and 1 of those entries is selected to be deleted, the programme will delete the first returned entry. This is due to the contact id not being specific enough and intefering with the age_turning coloumn integer. This could be fixed by creating more complex id names for each Birthday entry.  
+When there are 2 Birthday contacts with the same first name, and 1 of those entries is selected to be deleted, the programme will delete the first returned entry. This is due to the contact id not being specific enough and intefering with the age_turning coloumn integer. This could be fixed by creating more complex id names for each Birthday entry. 
+
+![Existing Bug](docs/images/)
 
 ## Terminal Compatibility
 
@@ -262,6 +255,20 @@ When there are 2 Birthday contacts with the same first name, and 1 of those entr
 # Deployment
 
 ## Deployment to Heroku
+
+* Create a Heroku account and login
+* Click 'New' from the dashboard, underneath the header in the top right corner
+* Click 'Create new app' option
+* Enter your unique application name, select your region and then click 'Create App'
+* Now on the project page, click the 'Settings' tab and scroll down to Config Vars.
+* In the KEY input field, enter 'CREDS' and in the VALUE input field, enter the content of you creds.json file in your repository
+* Click the 'Add' button to the right to add the Convig Vars
+* On the same page scroll down to the buildpacks section and click 'Add Buildpack'
+* Add both the Python and node.js buildpacks, making sure Python is above node.js
+* Go back to the 'Deploy' tab
+* Select Github deployment method
+* Search for your repository and click the 'Connect' to link Heroku to your repository
+* select your preferred deplyment type; Automatic Deployment or Manual Deployment
 
 ## To fork the repository on GitHub
 
