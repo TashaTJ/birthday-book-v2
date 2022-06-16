@@ -46,7 +46,7 @@ def main_menu_():
     """
     print(
         "\n 1. Search Birthdays\n 2. Add a new Birthday\n\
- 3. Edit Exisiting Birthday\n 4. Retrieve all Birthdays\n")
+ 3. Edit Existing Birthday\n 4. Retrieve all Birthdays\n")
     while True:
         user_input = user_response(
             Fore.BLACK + Back.WHITE +
@@ -432,7 +432,7 @@ want to delete this birthday? (Y/N): ')
 
 def edit_exisiting_birthday(birthday):
     """
-    Allows user to edit exisiting birthday entry
+    Allows user to edit existing birthday entry
     by individual input fields
     """
     print(birthday)
