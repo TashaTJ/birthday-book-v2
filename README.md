@@ -120,11 +120,19 @@ Once selected, Search Birthdays allows the user to search the connected google w
 
 ## Days until data
 
-## Bot created to automate texts to Birthday Boys and Girls 
+A function could be added to calculate the days until the contact's birthdays. This would be based on the date the entry was made (using datetime) and the birthday date entered manually. A fuction could then calculate the days until, and upate the form.
 
-## Automated email Birthday Cards to recipients
+## Text Bot 
+
+A Bot could be built using Twilio, to generate and send a birthday text on each individuals birthday, based on a phone number being entered along with the other data fields provided here.  
+
+## Automated Email Birthday Cards
+
+Zapier could be used here to set up an automated email card on each individuals birthday.
 
 ## Automated birthday reminders 
+
+User's could set up a text reminder so they'd never have to forget giving mum a call on her birthday! 
 
 [Back to top](<#contents>)
 
