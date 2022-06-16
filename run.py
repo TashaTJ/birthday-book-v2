@@ -339,6 +339,36 @@ You entered {next_birthday}\n")
             return next_birthday
 
 
+def add_new_birthday():
+    """
+    Function allows user to add new birthday entry data
+    """
+    print(Fore.WHITE + Back.CYAN + '\nTo add a new Birthday please enter the details below.\n\
+\nAll fields with a * are required.\n\
+\nType NA for any fields you wish to leave blank.\n')
+    first_name = pyip.inputStr('*First Name: ').capitalize()
+    last_name = pyip.inputStr('*Last Name: ').capitalize()
+    age_turning = pyip.inputStr('*Age Turning: ')
+    next_birthday = validate_next_birthday()
+    user_input = user_response('*Choose category: 1. Friends, \
+2. Favourites, 3. Family or 4. General: ', 1, 4)
+    if user_input == 1:
+        category = 'Friends'
+    elif user_input == 2:
+        category = 'Favourites'
+    elif user_input == 3:
+        category = 'Family'
+    else:
+        category = 'General'
+    birthday_id = birthday_id_creation()
+    new_birthday_entry = [
+        first_name, last_name, age_turning,
+        next_birthday, category, birthday_id
+        ]
+    print(new_birthday_entry)
+    save_to_worksheet(new_birthday_entry)
+
+
 
 def run_programme():
     """
