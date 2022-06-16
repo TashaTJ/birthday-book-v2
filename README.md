@@ -198,6 +198,8 @@ verified that -
 * That each number takes the user to the correct menu option
 * At the end of action the user can exit or return to main menu 
 
+![max 4 input](assets/images/max-4-pp3.png)
+
 ### Add New Birthday
 
 verified that -
@@ -205,6 +207,8 @@ verified that -
 * Only integers can be input in the Age Turning field  
 * The birthday must be in the correct format of 20/01/2023
 * At the end of action the user can exit or return to main menu 
+
+![not integer](assets/images/not-integer-pp3.png)
 
 ### Edit Existing Birthday
 
@@ -214,17 +218,22 @@ verified that -
 * All fields can be updated and save to the google sheet successfully
 * At the end of action the user can exit or return to main menu 
 
+![not found](assets/images/not-found-pp3.png)
 
 ### Retrieve all Birthdays
 
 verified that -
 * Programme retreives and prints all Birthday entries and prints them back to the user. 
 * At the end of action the user can exit or return to main menu 
+
+![exit](assets/images/exit-pp3.png)
  
 ### Exit
 
 verified that -
 * When choosing to leave the programme there's an 'Exiting programme..' message, so the user knows they are at the end
+
+![exit message](assets/images/exit-message-pp3.png)
 
 </details>
 
