@@ -322,6 +322,23 @@ you will first need to search for them.\n'
     search_birthday() 
 
 
+def validate_next_birthday():
+    """
+    Fuction to validate the next birthday is input 
+    in the correct format as 01/02/2022
+    """ 
+    while True:
+        next_birthday = str(pyip.inputStr('*Birthday: '))
+        if len(next_birthday) <= 9 or len(next_birthday) >= 11:
+            print(f"Birthday must be in the following format 01/02/2023.\
+You entered {len(next_birthday)} digits.\n")
+        elif next_birthday.isalpha():
+            print(f"Birthday must be in the following format 01/02/2023.\
+You entered {next_birthday}\n")
+        else:
+            return next_birthday
+
+
 
 def run_programme():
     """
