@@ -73,7 +73,7 @@ The **user** is any person who likes productivity and organisation apps, partocu
 
 There are 4 main features in the Birthday Book, which are numbered in the main menu:
 
-![Main Menu](assets/images/)
+![Main Menu](assets/images/main-menu-pp3.png)
  
 ## Search Birthdays
 
