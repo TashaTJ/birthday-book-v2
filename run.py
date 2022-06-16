@@ -186,6 +186,22 @@ def birthday_id_creation():
     return new_birthday_id
 
 
+def convert_to_list_action(option, action):
+    """
+    Function to convert birthday dictionary to a list
+    so it can be indexed when editing
+    or deleting the birthday information.
+    """
+    values = option.values()
+    values_list = list(values)
+    if action == 'edit':
+        edit_exisiting_birthday(values_list)
+    elif action == 'delete':
+        delete(values_list, 5)
+    else:
+        print(Fore.WHITE + Back.RED + 'Invalid action has been defined.')
+
+
 def run_programme():
     """
     This function calls on all other functions
