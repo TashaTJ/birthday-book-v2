@@ -145,7 +145,7 @@ def print_records_in_loop(record):
 
 def update_worksheet(row, col, value):
     """
-    Function used when editing a birthday
+    Function used when editing a birthday entry
     to make changes to the worksheet.
     """
     worksheet_to_update = BIRTHDAY_WORKSHEET
