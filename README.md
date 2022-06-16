@@ -83,7 +83,7 @@ Once selected, Search Birthdays allows the user to search the connected google w
   * Last name
   * Category
 
-![Search Birthdays](docs/images/)
+![Search Birthdays](assets/images/search-feature-pp3.png)
 
 ## Add New Birthday
 
@@ -94,7 +94,7 @@ Once selected, Search Birthdays allows the user to search the connected google w
   * The details are printed to the terminal and the user is asked if they want to edit the information.
   * If they do, they'll be taken to edit the contact, otherwise they can go back to the main menu.
 
-![Add New Birthday](docs/images/)
+![Add New Birthday](assets/images/add-new-birthday-feature-pp3.png)
 
 
 ## Edit Existing Birthday
