@@ -26,6 +26,15 @@ SHEET = GSPREAD_CLIENT.open('birthday_book_v2')
 BIRTHDAY_WORKSHEET = SHEET.worksheet('birthdays')
 
 
+def user_response(message, min_value, max_value):
+    """
+    Function validates users input from a list of choices.
+    used throughout the programme
+    """
+    input = pyip.inputInt(prompt=message, min=min_value, max=max_value)
+    return input
+
+
 def run_programme():
     """
     This function calls on all other functions
