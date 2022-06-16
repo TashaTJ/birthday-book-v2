@@ -308,6 +308,21 @@ def search_birthday():
         return False
 
 
+def edit_birthday_from_menu():
+    """
+    Function to edit birthday from the
+    main menu. The user will need to search for
+    the required birthday first.
+    """
+    print(Fore.WHITE + Back.CYAN +
+        '\nIn order to edit a birthday, \
+you will first need to search for them.\n'
+        )
+    print(Fore.BLACK + Back.WHITE + '\nTaking you to search now...\n')
+    search_birthday() 
+
+
+
 def run_programme():
     """
     This function calls on all other functions
