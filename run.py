@@ -127,6 +127,22 @@ def print_records(records, function=None):
         print_records_in_loop(record)
 
 
+def print_records_in_loop(record):
+    """
+    Function to loop through all records passed
+    as a parameter and print the details in a
+    list of key: values.
+    """
+    for key, value in record.items():
+        if key == 'phone_number':
+            # Ensures 0 is added to the front of the number
+            value1 = str(value).zfill(11)
+            print(f"{key}: {value1}")
+        else:
+            print(Fore.CYAN + f"{key}: {value}")
+    print("\n")
+
+
 def run_programme():
     """
     This function calls on all other functions
