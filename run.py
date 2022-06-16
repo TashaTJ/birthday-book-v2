@@ -35,6 +35,36 @@ def user_response(message, min_value, max_value):
     return input
 
 
+def main_menu_():
+    """
+    User selects which action to do, 
+    function uses their input and runs
+    elif loop to trigger the next process.
+    If user inputs invalid choice, programme 
+    will continue to ask for a valid input.
+    """
+    print(
+        "\n 1. Search Birthdays\n 2. Add a new Birthday\n\
+ 3. Edit Exisiting Birthday\n 4. Retrieve all Birthdays\n")
+    while True:
+        user_input = user_response(Fore.BLACK + Back.WHITE + 
+            "\nPlease enter a number from the above options: ", 1, 4
+            )
+        if user_input == 1:
+            search_birthday()
+            break
+        elif user_input == 2:
+            add_new_birthday()
+            break
+        elif user_input == 3:
+            edit_birthday_from_menu()
+            break
+        else:
+            retrieve_all_birthdays()
+            break
+        return False
+
+
 def run_programme():
     """
     This function calls on all other functions
