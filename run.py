@@ -27,6 +27,10 @@ BIRTHDAY_WORKSHEET = SHEET.worksheet('birthdays')
 
 
 def run_programme():
+    """
+    This function calls on all other functions
+    to run the programme
+    """
     print(pyfiglet.figlet_format('BIRTHDAY  BOOK \
 \n', font='smslant', justify="center"))
     print(Back.CYAN + '\nInstructions:\n\
