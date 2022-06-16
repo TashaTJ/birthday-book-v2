@@ -374,7 +374,7 @@ def add_new_birthday():
 \nAll fields with a * are required.\n')
     first_name = pyip.inputStr('*First Name: ').capitalize()
     last_name = pyip.inputStr('*Last Name: ').capitalize()
-    age_turning = pyip.inputInt('*Age Turning: ')
+    age_turning = pyip.inputStr('*Age Turning: ')
     next_birthday = validate_next_birthday()
     user_input = user_response('*Choose category: 1. Friends, \
 2. Favourites, 3. Family or 4. General: ', 1, 4)
