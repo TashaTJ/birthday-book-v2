@@ -111,6 +111,8 @@ Once selected, Search Birthdays allows the user to search the connected google w
 
 ## Retrieve all Birthdays
 
+* lastly from the main menu, When selected, Retrieve all Birthday's prints all birthday entries to the terminal  
+
 ![Menu example of 4 options](docs/images/)
 
 
