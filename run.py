@@ -173,6 +173,19 @@ def save_to_worksheet(info):
         another_task()
 
 
+def birthday_id_creation():
+    """
+    Function generates a new birthday entry ID,
+    based upon the previous entry in the worksheet.
+    Needed when adding new birthday entry.
+    """
+    all_values = BIRTHDAY_WORKSHEET.get_all_values()
+    previous_row = all_values[-1]
+    previous_birthday_id = int(previous_row[5])
+    new_birthday_id = str(previous_birthday_id + 1)
+    return new_birthday_id
+
+
 def run_programme():
     """
     This function calls on all other functions
