@@ -369,6 +369,17 @@ def add_new_birthday():
     save_to_worksheet(new_birthday_entry)
 
 
+def edit(birthday, cell_index, info_type):
+    """
+    Allows user to update cells by adding new entry
+    """    
+    # Converts to a string first to allow any integers to be searched for.
+    cell = BIRTHDAY_WORKSHEET.find(birthday[cell_index])
+    new_value = pyip.inputStr(f'Enter new {info_type}:').capitalize()
+    birthday[cell_index] = new_value
+    print(Fore.BLACK + Back.WHITE + f'{info_type} now being updated...\n')
+    update_worksheet(cell.row, cell.col, new_value)
+
 
 def run_programme():
     """
