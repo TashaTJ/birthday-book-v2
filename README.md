@@ -65,7 +65,7 @@ The **user** is any person who likes productivity and organisation apps, partocu
 
 ## Flowchart
 
-![Birthday Book Flowchart](docs/flowchart/)
+![Birthday Book Flowchart](assets/images/flowchart-pp3.png)
 
 [Back to top](<#contents>)
 
