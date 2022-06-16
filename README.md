@@ -1,6 +1,6 @@
 # **Birthday Book - Project Portfolio 3 - Python**
 
-Birthday Book is a Command Line Interface styled application, designed for a user to access their contacts birthday's, retrieve specific age & date information, edit & delete existing birthday contacts, and add new birthday entries data. This project has been designed for educational purposes and uses the Code Institutes mock terminal to run.
+Birthday Book is a Command Line Interface styled application, designed for a user to access their contacts birthday's, retrieve specific age & date information, edit & delete existing birthday contacts, and add new birthday entries data. This project has been designed for educational purposes and uses the Code Institute's mock terminal to run.
 
 You can view the live program here: <a href ='https://birthday-book-v2.herokuapp.com/' target="_blank"> Birthday Book Application</a>
 
@@ -47,17 +47,17 @@ The aim of this project is to deliver an easy and satisfiying command line inter
 
 ## User Stories
 
-The **user** is any person who likes productivity and organisation apps, partocularly ones that run via the command line.
+The **user** is any person who likes productivity and organisation apps, particularly ones that run via the command line.
 
 | ID  | ROLE |                                   ACTION                                   |                    GOAL                     |
 | --- | :--- | :------------------------------------------------------------------------: | :-----------------------------------------: |
 | 1   | USER |    As a user, I want to access all of my contact's birthdays at once       |        So I can browse at leisure           |
-| 2   | USER |    I want to be able to navigate around the interface easily               |          so I feel like returning           |
+| 2   | USER |    I want to be able to navigate around the interface easily               |          So I feel like returning           |
 | 3   | USER |          I want to know what app does from the opening message             |        So as to avoid any confusion         |
 | 4   | USER |       I want to retrieve a contact's information based upon their name     |       So I can execute action quickly       |
-| 5   | USER |               I want to add new birthday information                       |           to keep information current       |
+| 5   | USER |               I want to add new birthday information                       |           To keep information current       |
 | 6   | USER |     I want to update an existing entry if there's been a change            |           So I can stay organised           |
-| 7   | USER |   I want to be able to retrieve entries by category (family/friends)       |         to streamline my searching          |   
+| 7   | USER |   I want to be able to retrieve entries by category (family/friends)       |         To streamline my searching          |   
 
 **user**  
 
@@ -87,7 +87,7 @@ Once selected, Search Birthdays allows the user to search the connected google w
 
 ## Add New Birthday
 
-  * The 3rd feature accessible from the main menu, is the Add New Birthday feature
+  * The 2nd feature accessible from the main menu, is the Add New Birthday feature
   * Once selected, the user is asked to input a value for either First Name, Last Name, Age Turning, Birthday, or Category 
   * Both names, phone number and category are required entries
   * Once all fields have been entered the entry is saved to the google sheet
@@ -99,7 +99,7 @@ Once selected, Search Birthdays allows the user to search the connected google w
 
 ## Edit Existing Birthday
 
-* third option in the main menu is Edit Existing Birthday. On selection they'll first be taken to search for the entry they wish to edit.
+* the third option in the main menu is Edit Existing Birthday. On selection they'll first be taken to search for the entry they wish to edit.
 * after locating the required entry, the app will ask the user if they'd like to edit this entry by typing Y/N
 * If Y, they'll then be able to select which field of the entry they'd like to alter. 
 * The user makes the relevant changes and saves, with a reasuring message from the app that prints the updated entry.
