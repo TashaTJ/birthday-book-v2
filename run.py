@@ -144,11 +144,6 @@ def print_records_in_loop(record):
     list of key: values.
     """
     for key, value in record.items():
-        if key == 'phone_number':
-            # Ensures 0 is added to the front of the number
-            value1 = str(value).zfill(11)
-            print(f"{key}: {value1}")
-        else:
             print(Fore.CYAN + f"{key}: {value}")
     print("\n")
 

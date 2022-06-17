@@ -22,7 +22,7 @@ You can view the live program here: <a href ='https://birthday-book-v2.herokuapp
   * [Manual Testing](<#manual-testing>)
   * [Validation](<#validation>)
   * [Bugs Fixed](<#bugs-fixed>)
-  * [Existing Bugs](<#existing>)
+  * [Known Bugs](<#known-bugs>)
   * [Terminal Compatibility](<#terminal-compatibility>)
 * [Deployment](<#deployment>)
 * [Credits](<#credits>)
@@ -279,7 +279,7 @@ Initially the category coloumn of the google sheet was not being updated when ed
 
 ### Bug 2 
 
-The delete function would execute temprementally, until the below code was add:
+The delete function would execute temperamentally, until the below code was add:
 
 ![bug 2](assets/images/numericise-all-pp3.png)
 
@@ -287,7 +287,11 @@ The delete function would execute temprementally, until the below code was add:
 
 [Back to top](<#contents>)
 
-## Existing Bugs 
+## Know Bugs 
+
+In it's current state, the 'age turning' field in the app allows you to enter alphabetic characters and negative numbers. Ideally it would only take numbers between 1-100. This would require extra validation function(s) and/or a restructure of multiple functions, as 'inputInt' throws unexpected errors. This would be the first bug I would address should I have more time to complete the project.  
+
+![known bug](assets/images/bug-3-pp3.png)
 
 When there are 2 Birthday contacts with the same first name, and 1 of those entries is selected to be deleted, the programme will delete the first returned entry. This is due to the contact id not being specific enough and intefering with the age_turning coloumn integer. This could be fixed by creating more complex id names for each Birthday entry. 
 
