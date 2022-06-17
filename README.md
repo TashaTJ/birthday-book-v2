@@ -297,7 +297,7 @@ The delete function would execute temperamentally, until the below code was add:
 
 ## Terminal Compatibility
 
-Birthday Book is to be used and deployed via Heroku, and the terminal template provided by Code institute. It is not compatibal with a local terminal as certain display positioning would be affected, even if the functionality of the programme would be unaltered.
+Birthday Book is to be used and deployed via Heroku, and the terminal template provided by Code Institute. It is not compatible with a local terminal as certain positioning would be affected, even if the functionality of the programme would be unaltered.
 
 ### Heroku terminal:
 
@@ -350,7 +350,7 @@ Forking the GitHub account creates a copy of the Repository. Changes can be made
 
 # Credits
 
-* [README structure inspiration](https://lnkd.in/e_z-WR_9) - I took inspiration for the structure of my README from the sensational work of rhiannon mcnulty
+* [README structure inspiration](https://lnkd.in/e_z-WR_9) - I took inspiration for the structure of my README from the sensational work of Rhiannon Mcnulty
 * [Web Flow for Colour inspiration](https://webflow.com/?utm_medium=blog) - for inspiration when styling
 * [Python tutorial for Lambda function](https://www.youtube.com/watch?v=P8MdDCTbMOI) - helped me understand lambda functions 
 * [Pyfiglet tutorial](https://www.youtube.com/watch?v=U1aUteSg2a4) - helped to figure out the best way to do this
