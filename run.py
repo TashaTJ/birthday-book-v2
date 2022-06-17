@@ -350,7 +350,7 @@ def validate_next_birthday():
     in the correct format as 01/02/2022
     """
     while True:
-        next_birthday = str(pyip.inputStr('*Birthday: '))
+        next_birthday = str(pyip.inputStr('*Next Birthday: '))
         if len(next_birthday) <= 9 or len(next_birthday) >= 11:
             print(f"Birthday must be in the following format 01/02/2023.\
 You entered {len(next_birthday)} digits.\n")
