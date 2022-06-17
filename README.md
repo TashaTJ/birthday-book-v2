@@ -287,7 +287,7 @@ The delete function would execute temperamentally, until the below code was add:
 
 [Back to top](<#contents>)
 
-## Know Bugs 
+## Known Bugs 
 
 In it's current state, the 'age turning' field in the app allows you to enter alphabetic characters and negative numbers. Ideally it would only take numbers between 1-100. This would require extra validation function(s) and/or a restructure of multiple functions, as 'inputInt' throws unexpected errors. This would be the first bug I would address should I have more time to complete the project.  
 
